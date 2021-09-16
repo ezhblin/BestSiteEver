@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_7-of-12 fast-menu">
+            <lightning-button-group>
+                <template for:each={fastMenu} for:item="point"> 
+                    <lightning-button
+                        key={point}
+                        label={point}
+                    ></lightning-button>
+                </template>
+            </lightning-button-group>
+        </div>
+        
+        <div class="slds-col slds-size_5-of-12 fast-info">
+            <lightning-button-group>
+                <template for:each={fastInfo} for:item="point"> 
+                    <lightning-button
+                        key={point}
+                        label={point}
+                    ></lightning-button>
+                </template>
+            </lightning-button-group>
+        </div>
+    </div>
+</template>
