@@ -1,25 +1,35 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <div class="slds-grid slds-gutters">
-        <div class="slds-col slds-size_7-of-12 fast-menu">
-            <lightning-button-group>
-                <template for:each={fastMenu} for:item="point"> 
-                    <lightning-button
-                        key={point}
-                        label={point}
-                    ></lightning-button>
-                </template>
-            </lightning-button-group>
+    <div class=page>
+        <div class="header">
+            <div class="slds-size_1-of-12 fields inline-item"></div>
+            <div class="slds-grid slds-gutters slds-size_10-of-12 inline-item">
+
+                <div class="slds-col slds-size_7-of-12 fast-menu">
+                    <ul class="list-menu">
+                        <template for:each={fastMenu} for:item="point">
+                            <li key={point} class="inline-item">
+                                <a href="url"><span class="text-style">{point.label}</span></a>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+
+                <div class="slds-col slds-size_5-of-12">
+                </div>
+
+            </div>
+            <div class="slds-size_1-of-12 fields inline-item"></div>
         </div>
-        
-        <div class="slds-col slds-size_5-of-12 fast-info">
-            <lightning-button-group>
-                <template for:each={fastInfo} for:item="point"> 
-                    <lightning-button
-                        key={point}
-                        label={point}
-                    ></lightning-button>
-                </template>
-            </lightning-button-group>
+
+        <div class="header-bottom">
+            <div class="slds-size_1-of-12 fields inline-item"></div>
+            <div class="slds-col slds-size_4-of-12 inline-item">
+                <img src={logo} class="logo"></img>
+            </div>
+            
+            <div></div>
+            <div></div>
         </div>
     </div>
 </template>

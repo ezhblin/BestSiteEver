@@ -1,0 +1,38 @@
+/* @sldsValidatorIgnore */
+.header {
+    background-color:#f4f4f4;
+}
+
+.fast-menu {
+    background-color: #fd2;
+    width: max-content;
+    height: 44px;
+}
+
+.list-menu {
+    line-height: 44px;
+    float: left;
+}
+
+
+.text-style {
+    font-size: 14px;
+    font-family: 'Open Sans, Arial, Helvetica, Verdana,sans-serif';
+    color: #000;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.inline-item {
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+.header-bottom {
+    height: 100px;
+    background-color: white; 
+}
+
+.logo {
+    vertical-align: baseline;
+}
