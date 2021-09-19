@@ -24,12 +24,61 @@
 
         <div class="header-bottom">
             <div class="slds-size_1-of-12 fields inline-item"></div>
-            <div class="slds-col slds-size_4-of-12 inline-item">
-                <img src={logo} class="logo"></img>
-            </div>
             
-            <div></div>
-            <div></div>
+            <div class="slds-size_10-of-12 inline-item userbar">
+                <div class="slds-grid slds-wrap">
+                    
+                    <div class="slds-col slds-size_3-of-12 logo">
+                        <img src={logo}></img>
+                    </div>
+
+                    <div class="slds-col slds-size_9-of-12">
+
+                        <div class="slds-col slds-size_8-of-12 inline-item search">
+                            <form class="searh_form">
+                                <input class="searh_input" placeholder="Что за хлам вам нужен"></input>
+                            </form>
+                        </div>
+
+                        <div class="slds-col slds-size_4-of-12 inline-item"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slds-size_1-of-12 fields inline-item"></div>
+        </div>
+
+        <div class="body">
+            <div class="slds-size_1-of-12 fields inline-item"></div>
+
+            <div class="slds-size_10-of-12 inline-item main">
+                <div class="navigation">
+                    <ul class="list-menu navigation-menu">
+                        <template for:each={navigation} for:item="point">
+                            <li key={point} class="inline-item">
+                                <a href="url" class="link"><span class="text-style-navigation">{point.label}</span></a>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+
+                <div class="slds-grid slds-wrap">
+                    <template for:each={news} for:item="itemNews">
+                        <div key={itemNews.label} class="slds-col slds-size_1-of-3 container">
+                            <a href="url">
+                                <h3 class="title">{itemNews.label}</h3>
+                                <img class="img-news" src={itemNews.value}></img>
+                                <!-- <p class="title">{itemNews.label}</p> -->
+                            </a>
+                        </div>
+                    </template>
+                </div>
+
+            </div>
+
+
+            <div class="slds-size_1-of-12 fields inline-item"></div>
         </div>
     </div>
 </template>
