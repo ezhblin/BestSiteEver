@@ -2,7 +2,9 @@
 <template>
     <div class=page>
         <div class="header">
-            <div class="slds-grid">
+            <div>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+            <div class="slds-grid slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
                 <div class="slds-col slds-size_7-of-12 fast-menu">
                     <ul class="list-menu">
                         <template for:each={fastMenu} for:item="point">
@@ -15,8 +17,13 @@
                 <div class="slds-col slds-size_5-of-12">
                 </div>
             </div>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+            </div>
 
+            
             <div class="userbar">
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+            <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
                 <div class="slds-grid slds-wrap">
 
                     <div class="slds-col slds-size_3-of-12 logo">
@@ -36,6 +43,10 @@
 
                 </div>
             </div>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+            </div>
+
+
         </div>
 
         <div class="header-mobile">
@@ -53,34 +64,38 @@
         </div>
 
         <div class="body">
-            <div class="main">
-                <div class="navigation">
-                    <ul class="list-menu navigation-menu">
-                        <template for:each={navigation} for:item="point">
-                            <li key={point} class="inline-item">
-                                <a href="url" class="link"><span class="text-style-navigation">{point.label}</span></a>
-                            </li>
-                        </template>
-                    </ul>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+            <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item main navigation">
+                <ul class="list-menu navigation-menu">
+                    <template for:each={navigation} for:item="point">
+                        <li key={point} class="inline-item">
+                            <a href="url" class="link"><span class="text-style-navigation">{point.label}</span></a>
+                        </li>
+                    </template>
+                </ul>
+            </div> 
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>       
+        </div>          
+        
+        <div class="body b_bottom"> 
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>       
+            <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 plater inline-item">
+                <div class="slds-grid slds-wrap slds-large-size--9-of-12 slds-medium-size--1-of-1">
+                    <template for:each={news} for:item="itemNews">
+                        <div key={itemNews.label} class="slds-col slds-size_1-of-3 container">
+                            <a href="url" class="spec-Label">{itemNews.title}</a>
+                            <a href="url">
+                                <h3 class="title">{itemNews.label}</h3>
+                                <img class="img-news" src={itemNews.value}></img>
+                                <!-- <p class="title">{itemNews.label}</p> -->
+                            </a>
+                        </div>
+                    </template>
                 </div>
 
-                <div class="plater">
-                    <div class="slds-grid slds-wrap slds-large-size--9-of-12 slds-medium-size--1-of-1">
-                        <template for:each={news} for:item="itemNews">
-                            <div key={itemNews.label} class="slds-col slds-size_1-of-3 container">
-                                <a href="url" class="spec-Label">{itemNews.title}</a>
-                                <a href="url">
-                                    <h3 class="title">{itemNews.label}</h3>
-                                    <img class="img-news" src={itemNews.value}></img>
-                                    <!-- <p class="title">{itemNews.label}</p> -->
-                                </a>
-                            </div>
-                        </template>
-                    </div>
-
-                    <div class="slds-large-size--3-of-12 inline-item advertising slds-medium-size--0-of-12"></div>
-                </div>
+                <div class="slds-large-size--3-of-12 inline-item advertising slds-medium-size--0-of-12"></div>
             </div>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
         </div>
     </div>
 </template>

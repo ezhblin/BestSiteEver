@@ -37,7 +37,7 @@
     }    
 
     .fields {
-        display: none;
+        display: none !important;
     }
 
     .header-mobile {
@@ -137,7 +137,6 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-width: none;
-
 }
 
 .navigation:hover {
@@ -164,7 +163,7 @@
 .img-news {
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 100% !important;
     z-index: 1;
 }
 
@@ -205,11 +204,11 @@
     background: #ff7300;
 }
 
-.body {
+ .page {
+    overflow: hidden;
+ }
+
+.b_bottom {
     overflow-x: scroll;
     overflow-y: hidden;
-}
-
-.plater {
-    display: block;
 }
