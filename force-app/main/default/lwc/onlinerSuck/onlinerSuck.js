@@ -1,5 +1,4 @@
 import { LightningElement } from 'lwc';
-import CRAZY_JAPAN from '@salesforce/resourceUrl/crazyJapan';
 
 import PILS2 from '@salesforce/resourceUrl/pils2';
 import BOB1 from '@salesforce/resourceUrl/bob1';
@@ -41,4 +40,23 @@ export default class OnlinerSuck extends LightningElement {
     pils2 = PILS2;
     bob2 = BOB2;
     bob1 = BOB1;
+    
+    news = [ 
+        {label :'1', value : PILS2},
+        {label : '2', value : BOB2},
+        {label : '3', value : BOB1},
+
+        {label : '4', value : PILS2},
+        {label : '5', value : BOB2},
+        {label : '6', value :  BOB1},
+
+        {label : '7', value : BOB2},
+        {label : '8', value : PILS2},
+        {label : '9', value : BOB1},
+
+        {label : '10', value :  BOB1},
+        {label : '11', value : BOB2},
+        {label : '12', value : PILS2},
+    ];
+    
 }
