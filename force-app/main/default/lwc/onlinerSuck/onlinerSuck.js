@@ -4,6 +4,7 @@ import PILS2 from '@salesforce/resourceUrl/pils2';
 import BOB1 from '@salesforce/resourceUrl/bob1';
 import BOB2 from '@salesforce/resourceUrl/bob2';
 import ONLINER_LOGO from '@salesforce/resourceUrl/Onliner_logo';
+import SEARCH_ICON from '@salesforce/resourceUrl/searc_icon';
 
 export default class OnlinerSuck extends LightningElement {
     fastMenu = [
@@ -40,23 +41,24 @@ export default class OnlinerSuck extends LightningElement {
     pils2 = PILS2;
     bob2 = BOB2;
     bob1 = BOB1;
+    searcIcon = SEARCH_ICON;
     
     news = [ 
-        {label :'1', value : PILS2},
-        {label : '2', value : BOB2},
-        {label : '3', value : BOB1},
+        {label :'1', value : PILS2, title : 'Рабство'},
+        {label : '2', value : BOB2, title : 'Рабство'},
+        {label : '3', value : BOB1, title : 'Рабство'},
 
-        {label : '4', value : PILS2},
-        {label : '5', value : BOB2},
-        {label : '6', value :  BOB1},
+        {label : '4', value : PILS2, title : 'Рабство'},
+        {label : '5', value : BOB2, title : 'Рабство'},
+        {label : '6', value :  BOB1, title : 'Рабство'},
 
-        {label : '7', value : BOB2},
-        {label : '8', value : PILS2},
-        {label : '9', value : BOB1},
+        {label : '7', value : BOB2, title : 'Рабство'},
+        {label : 'Главные события выходных', value : PILS2, title : 'Рабство'},
+        {label : '9', value : BOB1, title : 'Рабство'},
 
-        {label : '10', value :  BOB1},
-        {label : '11', value : BOB2},
-        {label : '12', value : PILS2},
+        {label : '10', value :  BOB1, title : 'Рабство'},
+        {label : '11', value : BOB2, title : 'Рабство'},
+        {label : '12', value : PILS2, title : 'Рабство'},
     ];
     
 }

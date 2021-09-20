@@ -2,9 +2,7 @@
 <template>
     <div class=page>
         <div class="header">
-            <div class="slds-size_1-of-12 fields inline-item"></div>
-            <div class="slds-grid slds-gutters slds-size_10-of-12 inline-item">
-
+            <div class="slds-grid">
                 <div class="slds-col slds-size_7-of-12 fast-menu">
                     <ul class="list-menu">
                         <template for:each={fastMenu} for:item="point">
@@ -14,29 +12,22 @@
                         </template>
                     </ul>
                 </div>
-
                 <div class="slds-col slds-size_5-of-12">
                 </div>
-
             </div>
-            <div class="slds-size_1-of-12 fields inline-item"></div>
-        </div>
 
-        <div class="header-bottom">
-            <div class="slds-size_1-of-12 fields inline-item"></div>
-            
-            <div class="slds-size_10-of-12 inline-item userbar">
+            <div class="userbar">
                 <div class="slds-grid slds-wrap">
-                    
+
                     <div class="slds-col slds-size_3-of-12 logo">
                         <img src={logo}></img>
                     </div>
 
                     <div class="slds-col slds-size_9-of-12">
 
-                        <div class="slds-col slds-size_8-of-12 inline-item search">
+                        <div class="slds-col slds-size_8-of-12 inline-item">
                             <form class="searh_form">
-                                <input class="searh_input" placeholder="Что за хлам вам нужен"></input>
+                                <input type="search" class="searh_input" placeholder="Что за хлам вам нужен"></input>
                             </form>
                         </div>
 
@@ -45,14 +36,24 @@
 
                 </div>
             </div>
+        </div>
 
-            <div class="slds-size_1-of-12 fields inline-item"></div>
+        <div class="header-mobile">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-4 logo">
+                    <img src={logo}></img>
+                </div>
+
+                <div class="slds-col slds-size_2-of-4"></div>
+
+                <div class="slds-col slds-size_1-of-4">
+                </div>
+
+            </div>
         </div>
 
         <div class="body">
-            <div class="slds-size_1-of-12 fields inline-item"></div>
-
-            <div class="slds-size_10-of-12 inline-item main">
+            <div class="main">
                 <div class="navigation">
                     <ul class="list-menu navigation-menu">
                         <template for:each={navigation} for:item="point">
@@ -63,22 +64,23 @@
                     </ul>
                 </div>
 
-                <div class="slds-grid slds-wrap">
-                    <template for:each={news} for:item="itemNews">
-                        <div key={itemNews.label} class="slds-col slds-size_1-of-3 container">
-                            <a href="url">
-                                <h3 class="title">{itemNews.label}</h3>
-                                <img class="img-news" src={itemNews.value}></img>
-                                <!-- <p class="title">{itemNews.label}</p> -->
-                            </a>
-                        </div>
-                    </template>
+                <div class="plater">
+                    <div class="slds-grid slds-wrap slds-large-size--9-of-12 slds-medium-size--1-of-1">
+                        <template for:each={news} for:item="itemNews">
+                            <div key={itemNews.label} class="slds-col slds-size_1-of-3 container">
+                                <a href="url" class="spec-Label">{itemNews.title}</a>
+                                <a href="url">
+                                    <h3 class="title">{itemNews.label}</h3>
+                                    <img class="img-news" src={itemNews.value}></img>
+                                    <!-- <p class="title">{itemNews.label}</p> -->
+                                </a>
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="slds-large-size--3-of-12 inline-item advertising slds-medium-size--0-of-12"></div>
                 </div>
-
             </div>
-
-
-            <div class="slds-size_1-of-12 fields inline-item"></div>
         </div>
     </div>
 </template>
