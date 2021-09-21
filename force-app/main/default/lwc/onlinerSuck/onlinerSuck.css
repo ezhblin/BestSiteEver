@@ -172,7 +172,7 @@
 }
 
 .img-news:hover {
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .title {
@@ -210,4 +210,19 @@
 
 .page {
     display: block;
+}
+
+.plater {
+    max-width: 1200px;
+    min-width: 900px;
+}
+
+.body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.body:hover {
+    scrollbar-width: thin;
 }
