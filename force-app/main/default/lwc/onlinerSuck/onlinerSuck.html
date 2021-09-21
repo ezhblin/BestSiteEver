@@ -3,65 +3,103 @@
     <div class=page>
         <div class="header">
             <div>
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
-            <div class="slds-grid slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
-                <div class="slds-col slds-size_7-of-12 fast-menu">
-                    <ul class="list-menu">
-                        <template for:each={fastMenu} for:item="point">
-                            <li key={point} class="inline-item">
-                                <a href="url"><span class="text-style">{point.label}</span></a>
-                            </li>
-                        </template>
-                    </ul>
+                <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+                <div class="slds-grid slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
+                    <div class="slds-col slds-size_7-of-12 fast-menu">
+                        <ul class="list-menu">
+                            <template for:each={fastMenu} for:item="point">
+                                <li key={point} class="inline-item">
+                                    <a href="url"><span class="text-style">{point.label}</span></a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div class="slds-col slds-size_5-of-12">
+                    </div>
                 </div>
-                <div class="slds-col slds-size_5-of-12">
-                </div>
-            </div>
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+                <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
             </div>
 
-            
+
             <div class="userbar">
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
-            <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
-                <div class="slds-grid slds-wrap">
+                <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+                <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 inline-item">
+                    <div class="slds-grid slds-wrap">
 
-                    <div class="slds-col slds-size_3-of-12 logo">
-                        <img src={logo}></img>
-                    </div>
-
-                    <div class="slds-col slds-size_9-of-12">
-
-                        <div class="slds-col slds-size_8-of-12 inline-item">
-                            <form class="searh_form">
-                                <input type="search" class="searh_input" placeholder="Что за хлам вам нужен"></input>
-                            </form>
+                        <div class="slds-col slds-size_3-of-12 logo">
+                            <img src={logo}></img>
                         </div>
 
-                        <div class="slds-col slds-size_4-of-12 inline-item">
-                        </div>
-                        
-                    </div>
+                        <div class="slds-col slds-size_9-of-12">
 
+                            <div class="slds-col slds-size_8-of-12 inline-item">
+                                <form class="searh_form">
+                                    <input type="search" class="searh_input"
+                                        placeholder="Что за хлам вам нужен"></input>
+                                </form>
+                            </div>
+
+                            <div class="slds-col slds-size_4-of-12 inline-item buttons">
+                                <div class="slds-button-group" role="group">
+                                    <div>
+                                        <button
+                                            class="slds-button slds-button_neutral slds-button_first but_user">Profile</button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="slds-button slds-button_neutral slds-button_middle but_user">Message</button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="slds-button slds-button_neutral slds-button_middle but_user">Note</button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="slds-button slds-button_neutral slds-button_last but_user">Car</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+                <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
             </div>
 
 
         </div>
 
         <div class="header-mobile">
-            <div class="slds-grid slds-wrap">
-                <div class="slds-col slds-size_1-of-4 logo">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-4 inline-item logo">
                     <img src={logo}></img>
                 </div>
 
-                <div class="slds-col slds-size_2-of-4"></div>
+                <div class="slds-col slds-size_2-of-4 inline-item"></div>
 
-                <div class="slds-col slds-size_1-of-4">
+                <div class="slds-col slds-size_1-of-4 inline-item">
+                    <div class="slds-col inline-item buttons-mobile">
+                        <div class="slds-button-group" role="group">
+                            <div>
+                                <button
+                                    class="slds-button slds-button_neutral slds-button_first but_user-mobile">Profile</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="slds-button slds-button_neutral slds-button_middle but_user-mobile">Message</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="slds-button slds-button_neutral slds-button_middle but_user-mobile">Note</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="slds-button slds-button_neutral slds-button_last but_user-mobile">Car</button>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
-
             </div>
         </div>
 
@@ -75,13 +113,13 @@
                         </li>
                     </template>
                 </ul>
-            </div> 
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>       
-        </div>          
-        
-        <div class="body"> 
-            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>       
-            
+            </div>
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+        </div>
+
+        <div class="body">
+            <div class="slds-large-size--1-of-12 slds-medium-size--0-of-1 inline-item fields"></div>
+
             <div class="slds-large-size--10-of-12 slds-medium-size--1-of-1 plater inline-item">
                 <div class="slds-grid slds-wrap slds-large-size--9-of-12 slds-medium-size--1-of-1">
                     <template for:each={news} for:item="itemNews">

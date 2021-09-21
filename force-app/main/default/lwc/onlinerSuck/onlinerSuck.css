@@ -1,5 +1,6 @@
 .container { 
     height: 149px;
+    min-width: 250px;
     position: relative;
     background-color: rgba(10, 37, 51, 0.4);
     background-position-x: 0%, 0%;
@@ -212,17 +213,43 @@
     display: block;
 }
 
-.plater {
+/* .plater {
     max-width: 1200px;
     min-width: 900px;
-}
+} */
 
 .body {
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     scrollbar-width: none;
 }
 
 .body:hover {
     scrollbar-width: thin;
+}
+
+.but_user {
+    width: 60px;
+    color: #000;
+}
+
+.buttons {
+    text-align: end;
+}
+
+.but_user-mobile {
+    background: transparent;
+    border: none;
+    color: #000;
+    height: 23px;
+    --sds-c-button-shadow: none;
+    --sds-c-button-shadow-focus: none;
+    --sds-c-button-inverse-shadow-focus: none;
+}
+
+.buttons-mobile {
+    position: absolute;
+    right: 0px;
+    padding-top: 10px !important;
+    text-align: end;
 }
