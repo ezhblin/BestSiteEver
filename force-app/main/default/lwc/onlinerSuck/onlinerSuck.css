@@ -53,6 +53,10 @@
         height: 23px;
     }
 
+    .navigation {
+        width: 100%;
+    }
+
 }
 
 .page {
@@ -204,11 +208,6 @@
     background: #ff7300;
 }
 
- .page {
-    overflow: hidden;
- }
-
-.b_bottom {
-    overflow-x: scroll;
-    overflow-y: hidden;
+.page {
+    display: block;
 }
